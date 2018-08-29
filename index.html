@@ -28,7 +28,9 @@
             border-style: solid;
         }
         h1{
+            text-align: center;
             font-size: 4rem;
+            font-weight: 300;
         }
         .color{
             color: red;
@@ -36,45 +38,60 @@
         .blog{
             padding: 5%;
         }
-        .linea{
+        .texto{
             display: block;
+            padding-left: 2%;
         }
-        .texto {
-            margin-left: 10%;
+        .td-top{
+            vertical-align: top;
         }
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
     <div class="content">
+        <!--           -->
         <header>
             <div align="right" class="search">
                 <input type="text" name="search" id="search">
                 <button type="submit">Search</button>
             </div>        
             <hr>
-            <div align="center">
-                <h1>Blogatog</h1>
-            </div>
+            <h1>Blogatog</h1>
         </header>    
         <hr>
         <!--           -->
-        <tr class="blog">           
-            <th><span style="font-size: 3rem; color: black;"><i class="fas fa-list-alt"></i></span></th>
-            <th>
-                <span class="texto linea">
-                <span class="color">subwayray</span>
-                <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Facilis, harum voluptatibus? Dolor modi at, culpa mollitia laudantium sunt distinctio consequuntur tempore animi ex aliquam atque saepe libero ipsa natus est.</b>
-                <br><br>No comment. :)<br><br>
-                <span><i class="far fa-clock"></i> August 29,2018 </span></span>
-            </th>
-        </tr>               
+        <article>
+            <table>
+                <tr>           
+                    <td class="td-top"><span style="font-size: 3rem; color: black;"><i class="fas fa-list-alt"></i></span></td>
+                    <td>
+                        <div class="texto">
+                            <span class="color">subwayray</span>
+                            <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Facilis, harum voluptatibus? Dolor modi at, culpa mollitia laudantium sunt distinctio consequuntur tempore animi ex aliquam atque saepe libero ipsa natus est.</b>
+                            <br><br>No comment. :)<br><br>
+                                <span><i class="far fa-clock"></i> August 29,2018 </span>
+                        </div>
+                    </td>
+                </tr>               
+            </table>
+        </article>
         <hr>
         <!--           -->
-        <article class="blog">
-            <span style="font-size: 3rem; color: black;"><i class="fas fa-list-alt linea"></i></span>
-            <p class="linea"><span class="color">subwayray</span><b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, harum voluptatibus? Dolor modi at, culpa mollitia laudantium sunt distinctio consequuntur tempore animi ex aliquam atque saepe libero ipsa natus est.
-                </b></p><p>No comment. :)</p>
+        <article>
+            <table>
+                <tr>           
+                    <td class="td-top"><span style="font-size: 3rem; color: black;"><i class="fas fa-list-alt"></i></span></td>
+                    <td>
+                        <div class="texto">
+                            <span class="color">subwayray</span>
+                            <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Facilis, harum voluptatibus? Dolor modi at, culpa mollitia laudantium sunt distinctio consequuntur tempore animi ex aliquam atque saepe libero ipsa natus est.</b>
+                            <br><br>No comment. :)<br><br>
+                            <span><i class="far fa-clock"></i> August 29,2018 </span>
+                        </div>
+                    </td>
+                </tr>               
+            </table>
         </article>
     </div>
 </body>
